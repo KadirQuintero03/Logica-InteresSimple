@@ -36,15 +36,15 @@ function conversionTiempo(
   if (tiempoDia !== 0 && tiempoMes !== 0 && tiempoAño !== 0 && Tiempo === 0) {
     console.log("If de tiempo especifico");
 
-    if (UnidadDeTiempo == "dias") {
+    if (UnidadDeTiempo === "dias") {
       return tiempoAño * 365 + tiempoMes * 30 + tiempoDia;
     }
 
-    if (UnidadDeTiempo == "meses") {
+    if (UnidadDeTiempo === "meses") {
       return tiempoAño * 12 + tiempoMes + tiempoDia / 30;
     }
 
-    if (UnidadDeTiempo == "anual") {
+    if (UnidadDeTiempo === "anual") {
       return tiempoAño + tiempoMes / 12 + tiempoDia / 365;
     }
   }
@@ -53,31 +53,31 @@ function conversionTiempo(
   if (Tiempo !== 0 && tiempoDia === 0 && tiempoMes === 0 && tiempoAño === 0) {
     console.log("If de periodo de tiempo");
 
-    if (UnidadDeTiempo == "dias") {
+    if (UnidadDeTiempo === "dias") {
       return Tiempo / 365;
     }
 
-    if (UnidadDeTiempo == "meses") {
+    if (UnidadDeTiempo === "mensual") {
       return Tiempo / 12;
     }
 
-    if (UnidadDeTiempo == "semestral") {
+    if (UnidadDeTiempo === "semestral") {
       return Tiempo / 2;
     }
 
-    if (UnidadDeTiempo == "trimestral") {
-      return Tiempo / 4;
-    }
-
-    if (UnidadDeTiempo == "cuatrimestral") {
+    if (UnidadDeTiempo === "trimestral") {
       return Tiempo / 3;
     }
 
-    if (UnidadDeTiempo == "bimestral") {
+    if (UnidadDeTiempo === "cuatrimestral") {
+      return Tiempo / 4;
+    }
+
+    if (UnidadDeTiempo === "bimestral") {
       return Tiempo / 6;
     }
 
-    if (UnidadDeTiempo == "anual") {
+    if (UnidadDeTiempo === "anual") {
       return Tiempo / 1;
     }
   }
