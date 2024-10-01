@@ -1,18 +1,37 @@
-let VF = 0; //El monto de la anualidad.
-let A = 40000; //Pago periodico
-let i = 18 / 100;  //Tasa de la anualidad
-let n = 24; // Número de periodos de capitalización o de pago de anulidad.
-let VA = 0; //Valor actual o presnete de la anualidad.
+let VP = 0; //Capital o valor presente de una anualidad.
+let VF = 0; //Valor futuro o monto.
+let R = 0; // Anualidad, cuota o renta periódica.
+let N = 0; //Tiempo, periodo o plazo de anualidad.
+let I = 0; //Tasa de interés efectiva periódica.
 
-// console.log(calcutateVF(A, i, n))
-// console.log(calculateVA(A, i, n))
+//********** Anualidades vencidas **********
+//Hallar renta cuando tenemos el monto final.
+function renta_teniendo_montoFinal(){
 
-function calcutateVF(A, i, n) {
-    VF = parseInt(A) * ((Math.pow(1 + i, parseInt(n)) - 1) / i)
-    return VF.toFixed(2)
 }
 
-function calculateVA(A, i, n) {
-    VA = parseInt(A) * ((1 - Math.pow(1 + i, -parseInt(n))) / i)
-    return VA.toFixed(2)
+//Hallar numero de periodos cuando tenemos monto final.
+function periodo_teniendo_montoFinal(){
+
 }
+
+//Formula para calcular valor presente.
+function calcular_valorPresente(){
+
+}
+
+//Formula para calcular el valor futuro.
+function calcular_ValorFuturo(){
+
+}
+
+//Hallar renta cuando tenemos el capital inicial.
+
+
+//Hallar numero de periodos cuando tenemos el capital inicial.
+
+//********** Anualidades diferida anticipada **********
+
+//********** Anualidades diferida vencida **********
+
+//********** Anualidades Anticipada **********

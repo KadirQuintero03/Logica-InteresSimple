@@ -11,11 +11,11 @@ let CapitalInicial = 0;
 let TasaDeInteres = 0;
 let MontoFuturo = 0;
 let Interes = 0;
-let UnidadDeTiempo = "anual";
+let UnidadDeTiempo = "";
 let Tiempo = 0;
-let tiempoDia = 21;
-let tiempoMes = 7;
-let tiempoAño = 1;
+let tiempoDia = 0;
+let tiempoMes = 0;
+let tiempoAño = 0;
 
 let TiempoMod = conversionTiempo(
   Tiempo,
